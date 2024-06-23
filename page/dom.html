@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Elementos del DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    pre {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Explorando el DOM con JavaScript</h1>
+  <p>Selecciona este texto y espera 5 segundos para ver el texto seleccionado en la consola.</p>
+
+  <h2>Código JavaScript:</h2>
+  <pre><code>function ElementosDom() {
+  // Imprimir mensajes iniciales
+  console.log("dev");
+  console.log("********* Elementos del Dom ***********");
+
+  // Imprimir varios elementos y propiedades del DOM
+  console.log("Window Object:", window);
+  console.log("Document Object:", document);
+  console.log("Head Element:", document.head);
+  console.log("Body Element:", document.body);
+  console.log("HTML Element:", document.documentElement);
+  console.log("Doctype:", document.doctype);
+  console.log("Character Set:", document.characterSet);
+  console.log("Document Title:", document.title);
+  console.log("Links:", document.links);
+  console.log("Images:", document.images);
+  console.log("Forms:", document.forms);
+  console.log("StyleSheets:", document.styleSheets);
+  console.log("Scripts:", document.scripts);
+
+  // Esperar 5 segundos y luego imprimir el texto seleccionado
+  setTimeout(() => {
+    console.log("Selected Text:", document.getSelection().toString());
+  }, 5000);
+}
+
+export default ElementosDom;
+  </code></pre>
+
+ <script type="module" src="/app/index.js"></script>
+</body>
+</html>
