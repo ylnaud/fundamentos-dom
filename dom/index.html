@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundamentos de JavaScript - Duanly Vega Alderete</title>
+  <link rel="stylesheet" href="/styles/global.css">
+   
+</head>
+<body>
+  <header>
+    <h1>Fundamentos de JavaScript</h1>
+    <p>por Duanly Vega Alderete</p>
+  </header>
+  
+  <main>
+    <section class="introduction">
+      <h2>Introducción</h2>
+      <p>¡Bienvenido a mi sitio web sobre los fundamentos de JavaScript! Mi nombre es Duanly Vega Alderete y tengo 38 años. Aquí encontrarás una colección de mis estudios y proyectos mientras aprendo y exploro el maravilloso mundo de JavaScript.</p>
+    </section>
+
+    <section class="content">
+      <h2>¿Por qué aprender JavaScript?</h2>
+      <p>JavaScript es un lenguaje de programación esencial para el desarrollo web. Permite crear páginas web interactivas y dinámicas, y es una habilidad imprescindible para cualquier desarrollador web. Con JavaScript, puedes controlar el comportamiento de los elementos en una página, manejar eventos, validar formularios, crear animaciones y mucho más.</p>
+    </section>
+
+    
+    <section class="content">
+        <h2>Fundametos del Dom</h2>
+        <p>Primeros pasos con el curso del Dom con javaScript</p>
+        <pre><code>function ElementosDom() {
+            // Imprimir mensajes iniciales
+            console.log("dev");
+            console.log("********* Elementos del Dom ***********");
+          
+            // Imprimir varios elementos y propiedades del DOM
+            console.log("Window Object:", window);
+            console.log("Document Object:", document);
+            console.log("Head Element:", document.head);
+            console.log("Body Element:", document.body);
+            console.log("HTML Element:", document.documentElement);
+            console.log("Doctype:", document.doctype);
+            console.log("Character Set:", document.characterSet);
+            console.log("Document Title:", document.title);
+            console.log("Links:", document.links);
+            console.log("Images:", document.images);
+            console.log("Forms:", document.forms);
+            console.log("StyleSheets:", document.styleSheets);
+            console.log("Scripts:", document.scripts);
+          
+            // Esperar 5 segundos y luego imprimir el texto seleccionado
+            setTimeout(() => {
+              console.log("Selected Text:", document.getSelection().toString());
+            }, 5000);
+          }
+          
+          export default ElementosDom;
+            </code></pre>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Duanly Vega Alderete. Todos los derechos reservados.</p>
+  </footer>
+  <script type="module" src="/app/index.js"></script>
+</body>
+</html>
